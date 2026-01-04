@@ -1,17 +1,14 @@
-// Menu toggle cho mobile
 function toggleMenu() {
   const menu = document.getElementById('menu');
   menu.classList.toggle('active');
 }
 
-// Ẩn menu khi click link (mobile)
 document.querySelectorAll('#menu a').forEach(link => {
   link.addEventListener('click', () => {
     document.getElementById('menu').classList.remove('active');
   });
 });
 
-// Slideshow
 let slideIndex = 0;
 const slides = document.querySelectorAll('.slide');
 const dots = document.querySelectorAll('.dot');
@@ -33,7 +30,6 @@ function currentSlide(n) {
   showSlide(slideIndex);
 }
 
-// Tự động chạy slideshow (tuỳ chọn)
 setInterval(() => {
   changeSlide(1);
 }, 5000);

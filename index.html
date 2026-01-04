@@ -1,206 +1,105 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Du lịch Vĩnh Long</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trang chủ - Du lịch Vĩnh Long</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>🌴 Du lịch Vĩnh Long 🌴</h1>
-        <p>"Vĩnh Long - Nơi sông nước hội tụ, văn hóa miền Tây thăng hoa"</p>
-    </header>
+<header>
+  <h1>🌴 Du lịch Vĩnh Long 🌴</h1>
+  <p>"Vĩnh Long - Nơi sông nước hội tụ, văn hóa miền Tây thăng hoa"</p>
+</header>
 
-    <nav>
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
-        <ul id="menu">
-            <li><a href="#home" onclick="closeMenu()">Trang chủ</a></li>
-            <li><a href="#about" onclick="closeMenu()">Giới thiệu</a></li>
-            <li><a href="#places" onclick="closeMenu()">Địa điểm</a></li>
-            <li><a href="#food" onclick="closeMenu()">Ẩm thực</a></li>
-            <li><a href="#contact" onclick="closeMenu()">Liên hệ</a></li>
-        </ul>
-    </nav>
+<nav>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <ul id="menu">
+    <li><a href="index.html" class="active">Trang chủ</a></li>
+    <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+    <li><a href="dia-diem.html">Địa điểm</a></li>
+    <li><a href="am-thuc.html">Ẩm thực</a></li>
+    <li><a href="lien-he.html">Liên hệ</a></li>
+  </ul>
+</nav>
 
-    <div class="container">
-        <section id="home">
-            <div class="intro">
-                <h2>Chào mừng đến với Vĩnh Long</h2>
-                <p><a href="https://vi.wikipedia.org/wiki/V%C4%A9nh_Long" target="_blank" class="highlight">Vĩnh Long</a> là tỉnh thuộc đồng bằng sông Cửu Long, nổi tiếng với sông ngòi chằng chịt, vườn trái xanh tươi và văn hóa Nam Bộ đặc sắc. Điểm đến lý tưởng để khám phá miền Tây sông nước.</p>
-            </div>
-
-            <div class="slideshow">
-                <button class="prev" onclick="changeSlide(-1)">❮</button>
-                <button class="next" onclick="changeSlide(1)">❯</button>
-
-                <div class="slide active">
-                    <img src="https://mia.vn/media/uploads/blog-du-lich/doc-dao-cho-noi-cai-be-tien-giang-binh-di-va-dac-sac-07-1650892535.jpeg" alt="Chợ nổi">
-                    <div class="caption">Chợ nổi Cái Bè - Nét văn hóa độc đáo</div>
-                </div>
-                <div class="slide">
-                    <img src="https://media.mia.vn/uploads/blog-du-lich/kham-pha-nhung-vuon-trai-cay-vinh-long-sum-sue-va-tru-phu-nhat-1662972205.jpg" alt="Vườn">
-                    <div class="caption">Vườn trái cây tươi mát</div>
-                </div>
-                <div class="slide">
-                    <img src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-vinh-long-1-1024x614.jpg?tr=dpr-2,w-675" alt="Sông">
-                    <div class="caption">Sông nước thơ mộng</div>
-                </div>
-
-                <div class="dots">
-                    <span class="dot" onclick="currentSlide(0)"></span>
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                </div>
-            </div>
-        </section>
-
-        <section id="about">
-            <h2>Giới thiệu</h2>
-            <p>Vĩnh Long là một tỉnh thuộc vùng <a href="https://vi.wikipedia.org/wiki/Đồng_bằng_sông_Cửu_Long" target="_blank" class="highlight">Đồng bằng sông Cửu Long</a>, nằm giữa hai con sông lớn là <a href="https://vi.wikipedia.org/wiki/Sông_Tiền" target="_blank" class="highlight">sông Tiền</a> và <a href="https://vi.wikipedia.org/wiki/Sông_Hậu" target="_blank" class="highlight">sông Hậu</a>, có vị trí giao thông thuận lợi, kết nối với nhiều tỉnh, thành trong khu vực. Vĩnh Long nổi tiếng với <strong class="highlight">hệ thống sông ngòi, kênh rạch</strong> chằng chịt, tạo nên nét đặc trưng của vùng sông nước miền Tây Nam Bộ.</p>
-
-            <p>Tỉnh có điều kiện tự nhiên thuận lợi cho phát triển <strong class="highlight">nông nghiệp</strong>, đặc biệt là cây ăn trái với nhiều loại nổi tiếng như <a href="https://vi.wikipedia.org/wiki/Cam_sành" target="_blank" class="highlight">cam sành</a>, <strong class="highlight">bưởi Năm Roi</strong>, chôm chôm, măng cụt… Bên cạnh đó, Vĩnh Long còn giàu bản sắc văn hóa với các <a href="#places" class="highlight">làng nghề truyền thống</a>, lễ hội dân gian và đời sống sinh hoạt đậm chất miệt vườn.</p>
-
-            <p>Vĩnh Long cũng là điểm đến <strong class="highlight">du lịch sinh thái</strong> hấp dẫn với các khu du lịch sinh thái, <a href="#places" class="highlight">chợ nổi</a>, <a href="#places" class="highlight">cù lao</a>, vườn trái cây và nhiều công trình văn hóa – tâm linh. Con người Vĩnh Long <strong class="highlight">hiền hòa, mến khách</strong>, góp phần tạo nên hình ảnh một vùng đất trù phú, yên bình và giàu tiềm năng phát triển.</p>
-
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/I9x-LqccIa0?si=fF8fOH8W5BxzSdEQ" title="Vĩnh Long" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </section>
-
-        <section id="places">
-            <h2>Địa điểm nổi bật</h2>
-            <div class="grid">
-                <div class="card">
-                    <img src="https://dulichviet.com.vn/images/bandidau/cho-noi-cai-be-tien-giang-hanh-trinh-kham-pha-net-dep-song-nuoc.jpg" alt="Chợ nổi">
-                    <div class="content">
-                        <h3><a href="https://vietair.com.vn/du-lich-trong-nuoc/cho-noi-cai-be.html" target="_blank" class="highlight">Chợ nổi Cái Bè</a></h3>
-                        <p>Sông nước miền Tây với vẻ đẹp yên bình, giản đơn luôn là điểm đến thú vị đối với nhiều du khách muốn trải nghiệm nét bình dị của chốn miền quê. Du lịch Tiền Giang - Vĩnh Long, nơi được ví như "vựa" trái cây của miền Nam, là điểm đến mang nhiều giá trị văn hóa đặc thù của sông nước miệt vườn.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-vinh-long-14.jpg?w=400" alt="Cù lao">
-                    <div class="content">
-                        <h3><a href="https://nucuoimekong.com/cu-lao-an-binh" target="_blank" class="highlight">Cù lao An Bình</a></h3>
-                        <p>Điểm du lịch sinh thái nổi tiếng với vườn trái cây nhiệt đới sai trái quanh năm và các trò chơi dân gian miệt vườn như lội ao bắt cá, chèo xuồng ba lá. Du khách còn có thể tham quan vườn bonsai ông Sáu, nhà gỗ ông Mười, chùa Tiên Châu mang ý nghĩa tâm linh.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-vinh-long-4.jpg?w=400" alt="Trà Ôn">
-                    <div class="content">
-                        <h3><a href="https://zaitri.com/kham-pha-cu-lao-may-kdl-sinh-thai-miet-vuon-tam-trong-o-tra-on-tinh-vinh-long-1576.html" target="_blank" class="highlight">Cồn Trà Ôn</a></h3>
-                        <p>Đặc sản miền Tây thì không thể thiếu chợ nổi. Dù quy mô không quá lớn như chợ nổi Cái Răng nhưng chợ nổi Trà Ôn lại là điểm chợ đầu mối quan trọng của vùng. Đặc biệt hơn hết là các ghe bày bán hoa kiểng rực rỡ sắc màu.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://media.mia.vn/uploads/blog-du-lich/lang-nghe-banh-trang-cu-lao-may-voi-be-day-lich-su-gan-1-the-ky-1-1662856772.jpg" alt="Làng nghề">
-                    <div class="content">
-                        <h3><a href="https://zaitri.com/kham-pha-cu-lao-may-kdl-sinh-thai-miet-vuon-tam-trong-o-tra-on-tinh-vinh-long-1576.html" target="_blank" class="highlight">Cù Lao Mây</a></h3>
-                        <p>Cù lao Mây nổi bật với vườn trái cây miệt vườn và các hoạt động vui chơi dân dã, đặc biệt là nghề làm bánh tráng truyền thống. Du khách đến đây có thể tham quan, trải nghiệm quy trình làm bánh và thưởng thức nhiều loại bánh tráng sáng tạo.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="food">
-            <div class="food">
-                <h2><a href="https://dulichbinhminh.com/an-gi-o-vinh-long" target="_blank" class="highlight">Ẩm thực đặc sản</a></h2>
-                <p>Món ăn đặc sản mang hương vị miền Tây:</p>
-                <div class="food-grid">
-                    <div class="food-item">
-                        <h3>Cá tai tượng chiên xù</h3>
-                        <p>Đặc sản Vĩnh Long với cá chiên nguyên con giòn xù, thịt mềm ngọt, ăn cuốn bánh tráng và rau sống.</p>
-                    </div>
-                    <div class="food-item">
-                        <h3>Lẩu cua đồng miền Tây</h3>
-                        <p>Nước lẩu ngọt tự nhiên từ cua đồng, vị chua nhẹ, ăn kèm nhiều loại rau đồng.</p>
-                    </div>
-                    <div class="food-item">
-                        <h3>Bánh tét Trà Cuôn</h3>
-                        <p>Bánh tét nổi tiếng Vĩnh Long, nếp dẻo thơm, nhân đậu xanh và thịt ba rọi béo bùi, thường dùng làm quà.</p>
-                    </div>
-                    <div class="food-item">
-                        <h3>Gỏi cuốn miền Tây</h3>
-                        <p>Cuốn tôm, thịt, bún và rau sống, chấm nước mắm me hoặc tương đậu phộng, món ăn nhẹ phổ biến ở Vĩnh Long.</p>
-                    </div>
-                    <div class="food-item">
-                        <h3>Lẩu mắm miền Tây</h3>
-                        <p>Nước lẩu đậm đà từ mắm cá, kết hợp cá, hải sản và rau đồng tươi, đặc trưng ẩm thực sông nước.</p>
-                    </div>
-                    <div class="food-item">
-                        <h3>Bánh bèo miền Tây</h3>
-                        <p>Bánh mềm làm từ bột gạo, nhân tôm, thịt hoặc đậu xanh, ăn kèm mỡ hành và nước mắm ngọt.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Thông Tin Liên Hệ</h2>
-            <div class="contact-container">
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <label>Họ và Tên *</label>
-                            <input type="text" placeholder="Nhập họ tên của bạn" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Email *</label>
-                            <input type="email" placeholder="example@email.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Số Điện Thoại</label>
-                            <input type="tel" placeholder="0123456789">
-                        </div>
-                        <div class="form-group">
-                            <label>Nội Dung Liên Hệ *</label>
-                            <textarea placeholder="Nhập nội dung bạn muốn gửi..." rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Gửi Tin Nhắn</button>
-                    </form>
-                </div>
-
-                <div class="contact-info-box">
-                    <div class="info-item">
-                        <div class="icon">📍</div>
-                        <div class="info-content">
-                            <h3>Địa Chỉ</h3>
-                            <p>Xã Bình Điền, Huyện Thủy Biểu<br>Tỉnh Thừa Thiên Huế, Việt Nam</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="icon">📞</div>
-                        <div class="info-content">
-                            <h3>Điện Thoại</h3>
-                            <p>(+84) 234 567 890<br>(+84) 987 654 321</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="icon">✉️</div>
-                        <div class="info-content">
-                            <h3>Email</h3>
-                            <p>info@binhdien.vn<br>contact@binhdien.vn</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="icon">🕐</div>
-                        <div class="info-content">
-                            <h3>Giờ Làm Việc</h3>
-                            <p>Thứ 2 - Thứ 6: 8:00 - 17:00<br>Thứ 7: 8:00 - 12:00</p>
-                        </div>
-                    </div>
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.362!2d105.9!3d10.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDE1JzAwLjAiTiAxMDXCsDU0JzAwLjAiRQ!5e0!3m2!1svi!2s!4v1234567890" width="100%" height="200" style="border:0;border-radius:8px" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div class="container">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Chào mừng đến với Vĩnh Long</h2>
+      <p><a href="https://vi.wikipedia.org/wiki/V%C4%A9nh_Long" target="_blank" class="highlight">Vĩnh Long</a> là tỉnh thuộc đồng bằng sông Cửu Long, nổi tiếng với sông ngòi chằng chịt, vườn trái xanh tươi và văn hóa Nam Bộ đặc sắc. Điểm đến lý tưởng để khám phá miền Tây sông nước.</p>
     </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2026 Du lịch Vĩnh Long</p>
-    </footer>
+  <!-- Slideshow Section -->
+  <section class="slideshow-section">
+    <h2>Vẻ đẹp Vĩnh Long</h2>
+    <div class="slideshow">
+      <button class="prev" onclick="changeSlide(-1)">❮</button>
+      <button class="next" onclick="changeSlide(1)">❯</button>
 
-    <script src="script.js"></script>
+      <div class="slide active">
+        <img src="https://mia.vn/media/uploads/blog-du-lich/doc-dao-cho-noi-cai-be-tien-giang-binh-di-va-dac-sac-07-1650892535.jpeg" alt="Chợ nổi">
+        <div class="caption">Chợ nổi Cái Bè - Nét văn hóa độc đáo</div>
+      </div>
+      <div class="slide">
+        <img src="https://media.mia.vn/uploads/blog-du-lich/kham-pha-nhung-vuon-trai-cay-vinh-long-sum-sue-va-tru-phu-nhat-1662972205.jpg" alt="Vườn">
+        <div class="caption">Vườn trái cây tươi mát</div>
+      </div>
+      <div class="slide">
+        <img src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-vinh-long-1-1024x614.jpg?tr=dpr-2,w-675" alt="Sông">
+        <div class="caption">Sông nước thơ mộng</div>
+      </div>
+
+      <div class="dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <h2>Hình ảnh Vĩnh Long</h2>
+    <div class="image-gallery">
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-vinh-long-14.jpg?w=400" alt="Cù lao An Bình">
+        <div class="gallery-caption">Cù lao An Bình</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://dulichviet.com.vn/images/bandidau/cho-noi-cai-be-tien-giang-hanh-trinh-kham-pha-net-dep-song-nuoc.jpg" alt="Chợ nổi">
+        <div class="gallery-caption">Chợ nổi sáng sớm</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://media.mia.vn/uploads/blog-du-lich/lang-nghe-banh-trang-cu-lao-may-voi-be-day-lich-su-gan-1-the-ky-1-1662856772.jpg" alt="Làng nghề">
+        <div class="gallery-caption">Làng nghề bánh tráng</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-vinh-long-4.jpg?w=400" alt="Chợ nổi">
+        <div class="gallery-caption">Chợ nổi Trà Ôn</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://statics.vinpearl.com/du-lich-vinh-long-5_1634201847.jpg" alt="Vườn trái cây">
+        <div class="gallery-caption">Vườn trái cây</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://toigingiuvedep.vn/wp-content/uploads/2021/04/hinh-anh-vinh-long-dep-5.jpg" alt="Sông nước">
+        <div class="gallery-caption">Sông nước miệt vườn</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>© 2026 Du lịch Vĩnh Long. All rights reserved.</p>
+    <p>Thiết kế với tình yêu vì quê hương</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
+

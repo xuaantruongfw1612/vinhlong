@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Du lịch Vĩnh Long</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌴 Du lịch Vĩnh Long 🌴</h1>
+        <p>"Vĩnh Long - Nơi sông nước hội tụ, văn hóa miền Tây thăng hoa"</p>
+    </header>
+
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul id="menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+            <li><a href="dia-diem.html">Địa điểm</a></li>
+            <li><a href="am-thuc.html">Ẩm thực</a></li>
+            <li><a href="lien-he.html" class="active">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="content-section">
+            <h2>Thông tin liên hệ</h2>
+            <p class="section-intro">Liên hệ với chúng tôi để được tư vấn và hỗ trợ về du lịch Vĩnh Long.</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-form-box">
+                    <h3>Gửi tin nhắn</h3>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label>Họ và Tên *</label>
+                            <input type="text" placeholder="Nhập họ tên của bạn" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" placeholder="example@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Số Điện Thoại</label>
+                            <input type="tel" placeholder="0123456789">
+                        </div>
+                        <div class="form-group">
+                            <label>Nội Dung Liên Hệ *</label>
+                            <textarea placeholder="Nhập nội dung bạn muốn gửi..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Gửi Tin Nhắn</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-box">
+                    <h3>Thông tin liên hệ</h3>
+
+                    <div class="info-item">
+                        <div class="icon">📍</div>
+                        <div class="info-content">
+                            <h4>Địa Chỉ</h4>
+                            <p>ấp Phước Bình xã Quới Thiện, huyện Vũng Liêm tỉnh VL</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon">📞</div>
+                        <div class="info-content">
+                            <h4>Điện Thoại</h4>
+                            <p>0965509527/p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon">✉️</div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>kieuuu1401@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon">🕐</div>
+                        <div class="info-content">
+                            <h4>Thành viên nhóm
+                                </h4>
+                                <p>Nguyễn Thị Song Ngân<br>
+                                    Triệu Thị Thanh Thư<br>
+                                    Nguyễn Thị Ngọc Thư<br>
+Huỳnh Thị Mộng Kiều</p>
+                        </div>
+                    </div>
+
+                    <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8231487160695!2d105.96363511526088!3d10.247177992606266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a082bfa5e6b0c7%3A0x7fbc9f44b24c37d4!2sV%C4%A9nh%20Long%2C%20Vi%E1%BB%87t%20Nam!5e0!3m2!1sen!2sus!4v1696029308364!5m2!1sen!2sus" width="100%" height="250" style="border:0;border-radius:8px" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="site-footer">
+  <div class="footer-content">
+    <p>© 2026 Du lịch Vĩnh Long. All rights reserved.</p>
+    <p>Thiết kế với tình yêu vì quê hương</p>
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

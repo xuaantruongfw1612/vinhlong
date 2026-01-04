@@ -13,12 +13,13 @@
     </header>
 
     <nav>
-        <ul>
-            <li><a href="#home">Trang chủ</a></li>
-            <li><a href="#about">Giới thiệu</a></li>
-            <li><a href="#places">Địa điểm</a></li>
-            <li><a href="#food">Ẩm thực</a></li>
-            <li><a href="#contact">Liên hệ</a></li>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul id="menu">
+            <li><a href="#home" onclick="closeMenu()">Trang chủ</a></li>
+            <li><a href="#about" onclick="closeMenu()">Giới thiệu</a></li>
+            <li><a href="#places" onclick="closeMenu()">Địa điểm</a></li>
+            <li><a href="#food" onclick="closeMenu()">Ẩm thực</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Liên hệ</a></li>
         </ul>
     </nav>
 
@@ -152,4 +153,3 @@ Vĩnh Long cũng là điểm đến du lịch hấp dẫn với các khu du lị
     <script src="script.js"></script>
 </body>
 </html>
-

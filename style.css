@@ -36,6 +36,13 @@ nav a {
 nav a:hover {
     background: #667eea;
 }
+.hamburger {
+    display: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -207,8 +214,21 @@ footer {
     header h1 {
         font-size: 1.5rem;
     }
+    .hamburger {
+        display: block;
+        text-align: left;
+    }
     nav ul {
+        display: none;
         flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav a {
+        text-align: left;
+        padding: 1rem;
     }
     .grid,
     .food-grid {
@@ -218,5 +238,12 @@ footer {
     .next {
         padding: 0.5rem 0.8rem;
         font-size: 1.2rem;
+    }
+    .slide img {
+        height: 250px;
+    }
+    .caption {
+        font-size: 0.9rem;
+        padding: 0.7rem;
     }
 }

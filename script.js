@@ -21,10 +21,21 @@ function currentSlide(n){
     showSlide(slideIndex);
 }
 
+function toggleMenu(){
+    document.getElementById('menu').classList.toggle('active');
+}
+
+function closeMenu(){
+    if(window.innerWidth<=768){
+        document.getElementById('menu').classList.remove('active');
+    }
+}
+
 setInterval(()=>{slideIndex++;showSlide(slideIndex)},4000);
 showSlide(slideIndex);
 
 document.querySelectorAll('nav a').forEach(a=>a.onclick=e=>{
     e.preventDefault();
+    closeMenu();
     document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
 });
